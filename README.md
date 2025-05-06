@@ -12,7 +12,7 @@ To install this script, follow these steps:
 
 ### 2. Install Wine
 
-- Install [Wine](https://www.winehq.org/) e. g. by entering the commands in the terminal: `sudo apt install wine64`
+- Install [Wine](https://www.winehq.org/) e. g. by entering the commands in the terminal: `sudo apt install wine64`.
 
 ### 3. Create a new format policy tool
 
