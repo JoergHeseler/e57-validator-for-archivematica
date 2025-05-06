@@ -8,7 +8,7 @@ To install this script, follow these steps:
 
 ### 1. Download the official E57 validator tool
 
-- Download the latest release for Windows x86 64bit of the [E57 validator](http://www.libe57.org/download.html) and put the `./bin/e57validate.exe` in the `/usr/share/` folder.
+- Download the latest release for Windows x86 (64bit) of the [E57 validator](http://www.libe57.org/download.html) and put the `./bin/e57validate.exe` in the `/usr/share/` folder.
 
 ### 2. Install Wine
 
