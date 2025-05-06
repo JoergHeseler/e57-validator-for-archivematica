@@ -18,7 +18,7 @@ To install this script, follow these steps:
 
 - In the Archivematica frontend, navigate to **Preservation planning** > **Format policy registry** > **Tools** > **Create new tool** or go directly to [this link](http://10.10.10.20/fpr/fptool/create/).
 - Enter the following parameters:
-  - **Description**: Enter `e57validate.exe`.
+  - **Description**: Enter `e57validate`.
   - **Version**: Enter the version you downloaded, e. g. `1.1.312`.
 - Click **Save**.
 
@@ -26,8 +26,8 @@ To install this script, follow these steps:
 
 - In the Archivematica frontend, navigate to **Preservation planning** > **Validation** > **Commands** > **Create new command** or go directly to [this link](http://10.10.10.20/fpr/fpcommand/create/).
 - Fill in the following fields:
-  - **The related tool**: Select **e57validate.exe**.
-  - **Description**: Enter `Validate using e57validate.exe`.
+  - **The related tool**: Select **e57validate**.
+  - **Description**: Enter `Validate using e57validate`.
   - **Command**: Paste the entire content of the [**e57-validator.py**](./src/e57-validator.py) file.
   - **Script type**: Select **Python script**.
   - **Command usage**: Select **Validation**.
@@ -40,7 +40,7 @@ To install this script, follow these steps:
 - Fill in the following fields:
   - **Purpose**: Select **Validation**.
   - **The related format**: Select **Image (Vector): ASTM E57 3D File Format: E57 3D File Format (fmt/643)**.
-  - **Command**: Select **Validate using e57validate.exe**.
+  - **Command**: Select **Validate using e57validate**.
 - Click **Save**.
 
 ## Test
@@ -55,11 +55,11 @@ Files with no errors end with `valid` in their name and should pass validation w
 
 ### In the command line:
 
-You can use the validator at the command line prompt by typing `python e57-validator.py <E57 file to validate>`. You may also want to add `--validator-path=<path to the official e57validate.exe>`.
+You can use the validator at the command line prompt by typing `python e57-validator.py <E57 file to validate>`. You may also want to add `--validator-path=<path to the official e57validate>`.
 
 ## Dependencies
 
-[Archivematica 1.13.2](https://github.com/artefactual/archivematica/releases/tag/v1.13.2) and the [E57 Validator](http://www.libe57.org/download.html) were used to analyze, design, develop and test this script.
+[Archivematica 1.13.2](https://github.com/artefactual/archivematica/releases/tag/v1.13.2) and the [E57 Validator 1.1.312](http://www.libe57.org/download.html) were used to analyze, design, develop and test this script.
 
 ## Background
 
