@@ -11,25 +11,24 @@ import subprocess
 import sys
 import re
 import platform
+import os
 
 
 class E57ValidatorException(Exception):
     pass
 
-def get_validator_path_from_arguments():
+def get_e57validate_path_from_arguments():
     for arg in sys.argv:
         if arg.lower().startswith("--validator-path="):
             return arg.split("=", 1)[1].rstrip('/\\')
     return '/usr/share'
 
-def parse_e57_validator_data(target):
+def parse_e57validate_data(target):
     try:
-        validator_file = 'e57validate.exe'
-        validator_file_path = get_validator_path_from_arguments()
-        if platform.system() == 'Windows':
-            args = [get_validator_path_from_arguments() + '\\' + validator_file, '-i', target]
-        else:
-            args = ['wine', get_validator_path_from_arguments() + '/' + validator_file, '-i', target]
+        validator_file_path = get_e57validate_path_from_arguments() + os.sep + 'e57validate.exe'
+        args = [validator_file_path, '-i', target]
+        if platform.system() != 'Windows':
+            args.insert(0, 'wine')
         return subprocess.check_output(args).decode("utf8")
     except FileNotFoundError:
         raise E57ValidatorException("e57validate not found. Use --validator-path= to specify its path.")
@@ -59,7 +58,7 @@ def format_event_outcome_detail_note(format, version, result):
 
 def main(target):
     try:
-        result = parse_e57_validator_data(target)
+        result = parse_e57validate_data(target)
         error_count = get_error_count(result)
         version = '1.0'
         format = 'E57'
