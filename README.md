@@ -1,4 +1,4 @@
-# E57 Validator for Archivematica!
+# E57 Validator for Archivematica
 
 This repository provides a script that uses the official [E57 Validator](http://www.libe57.org/download.html) tool to validate ASTM E57 files in [Archivematica](https://www.archivematica.org/).
 

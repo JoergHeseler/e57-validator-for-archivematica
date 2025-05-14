@@ -1,4 +1,4 @@
-# Title: e57-validator!
+# Title: e57-validator
 # Version: 1.0.0
 # Publisher: NFDI4Culture
 # Publication date: May 6, 2025
