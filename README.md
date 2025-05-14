@@ -45,7 +45,7 @@ To install this script, follow these steps:
 
 ## Test
 
-To test this validator, you can use the sample E57 files located [here](https://github.com/JoergHeseler/point-cloud-samples-for-preservation-testing/tree/main/E57).
+To test this validator, you can use the sample E57 files located [here](https://github.com/JoergHeseler/point-cloud-samples-for-preservation-testing/tree/main/e57).
 
 ### In Archivematica:
 
