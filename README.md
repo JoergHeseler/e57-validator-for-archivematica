@@ -59,7 +59,7 @@ You can use the validator at the command line prompt by typing `python e57-valid
 
 ## Dependencies
 
-[Archivematica 1.13.2](https://github.com/artefactual/archivematica/releases/tag/v1.13.2) and the [libE57 tools](http://www.libe57.org/download.html) were used to analyze, design, develop and test this script.
+[Archivematica 1.13.2](https://github.com/artefactual/archivematica/releases/tag/v1.13.2) and the [libE57 tools 1.1.312](http://www.libe57.org/download.html) were used to analyze, design, develop and test this script.
 
 ## Background
 
@@ -68,6 +68,7 @@ As part of the [NFDI4Culture](https://nfdi4culture.de/) initiative, efforts are 
 ## Related projects
 
 - [DAE Validator for Archivematica](https://github.com/JoergHeseler/dae-validator-for-archivematica)
+- [E57 Metadata Extractor for Archivematica](https://github.com/JoergHeseler/e57-metadata-extractor-for-archivematica)
 - [glTF Metadata Extractor for Archivematica](https://github.com/JoergHeseler/gltf-metadata-extractor-for-archivematica)
 - [Mesh Samples for Preservation Testing](https://github.com/JoergHeseler/mesh-samples-for-preservation-testing)
 - [Point Cloud Samples for Digital Preservation Testing](https://github.com/JoergHeseler/point-cloud-samples-for-preservation-testing)
